@@ -50,6 +50,7 @@
 前排提示，polybar配合[官方wiki](https://github.com/polybar/polybar/wiki)食用口味更佳。
 
 壁纸:/图片/148626446001.png
+
 [壁纸](https://github.com/Dimerbone/dotfiles/blob/master/图片/1486262446001.png)
 
 <!--more-->
