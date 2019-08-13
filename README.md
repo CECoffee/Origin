@@ -160,10 +160,3 @@
 
 显示 cpu 使用情况。
 
-## show-desktop
-
-显示桌面。默认是切换到`25:Desktop`，可在`nord-down`中调整。如果 i3wm 启动了 workspace back_and_forth 的话，两次左击可返回原来桌面。
-
-| 绑定     | 事件                        |
-| -------- | --------------------------- |
-| 鼠标左击 | i3-msg workspace 25:Desktop |
