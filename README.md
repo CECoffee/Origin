@@ -13,7 +13,7 @@
 3. [date](#date)
 4. [notify (基于dunst)](#notify)
 5. [upload](#upload)
-6. [download](#upload)
+6. [download](#upload & download)
 7. [battery](#battery)
 8. [keyboard](#keyboard)
 9. [filesystem](#filesystem)
@@ -87,7 +87,7 @@
 | -------- | ------------------------------------------------------------ |
 | 鼠标左击 | 模拟 ctrl+grave，即默认的 dunst 历史快捷键，会被其他快捷键设定覆盖 |
 
-## upload
+## upload & download
 
 显示上传及下载速度，单位为KB/s，需要在.config/polybar/config中`interface`字段设置自己的网络设备。
 
