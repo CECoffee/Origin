@@ -423,7 +423,7 @@ margin-bottom = 5
 [module/daily-poem]
 type = custom/ipc
 
-# replace IDZJPFP9nkjOfsJ5KJO98E4Tgu3DbFHh with your token from https://v2.jinrishici.com/token.
+# replace vU1whWzAS7pqAHRkvTD9KxF757ZXcfwS with your token from https://v2.jinrishici.com/token.
 hook-0 = ~/.config/polybar/scripts/daily-poem require vU1whWzAS7pqAHRkvTD9KxF757ZXcfwS ~/.config/polybar/scripts/poem.txt
 hook-1 = ~/.config/polybar/scripts/daily-poem get ~/.config/polybar/scripts/poem.txt content 
 hook-2 = ~/.config/polybar/scripts/daily-poem get ~/.config/polybar/scripts/poem.txt origin
