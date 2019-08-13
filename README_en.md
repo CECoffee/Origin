@@ -17,7 +17,7 @@ The supported modules：
 3. [date](#date)
 4. [notify (based on dunst)](#notify)
 5. [upload](#upload)
-6. [download](#upload & download)
+6. [download](#upload)
 7. [battery](#battery)
 8. [keyboard](#keyboard)
 9. [filesystem](#filesystem)
@@ -88,7 +88,7 @@ Display messages.
 | :------: | :---------------------------------: |
 | Left-click the mouse | simulate ctrl+grave -- default dunst shortcut to view history(s)，it'll be overwritten by other shortcuts |
 
-## upload & download
+## upload
 
 Display upload and download speed，you are supposed to overwrite .config/polybar/config `wlp3s0` and `enp2s0` with your own Ethernet device.
 
