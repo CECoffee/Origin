@@ -4,7 +4,7 @@
 
 <!--more-->
 
-![README_en](https://github.com/Dimerbone/dotfiles/blob/master/README_en.md)
+[README_en](https://github.com/Dimerbone/dotfiles/blob/master/README_en.md)
 
 <!--more-->
 
