@@ -28,28 +28,31 @@
 
 依赖：
 
-1.[Font Awesome](https://www.archlinux.org/packages/community/any/ttf-font-awesome/)
-2.bdf-unifont（AUR）
-3.ttf-fira-code（AUR）
-4.[Weather Icon](https://github.com/erikflowers/weather-icons)、jq（weather[polybar]组件需要）
+1. [Font Awesome](https://www.archlinux.org/packages/community/any/ttf-font-awesome/)
+2. bdf-unifont（AUR）
+3. ttf-fira-code（AUR）
+4. [Weather Icon](https://github.com/erikflowers/weather-icons)、jq（weather[polybar]组件需要）
 5. Dunst （notify[polybar]组件显示历史通知需要）
-6.mpd、ncmpcpp、mpc（mpd[polybar]、music[i3]组件需要）
-7.unicode-rxvt（urxvt）（AUR）
-8.compton
-9.feh
-10.fcit-sogoupinyin、fcitx-configtool、fcitx-lilydjwg-git<aur>
-11.rofi（rofi[i3]组件需要）
-12.[electron-ssr](https://github.com/shadowsocksrr/electron-ssr/releases/)
-13.utool
-14.cmatrix
-15.vundle（vim需要）
-16.xdotool（notify[polybar]组件需要）
-17.powerline-fonts
-18.ttf-monaco
+6. mpd、ncmpcpp、mpc（mpd[polybar]、music[i3]组件需要）
+7. unicode-rxvt（urxvt）（AUR）
+8. compton
+9. feh
+10. fcit-sogoupinyin、fcitx-configtool、fcitx-lilydjwg-git<aur>
+11. rofi（rofi[i3]组件需要）
+12. [electron-ssr](https://github.com/shadowsocksrr/electron-ssr/releases/)
+13. utool（已上传）
+14. cmatrix
+15. vundle（vim需要）
+16. xdotool（notify[polybar]组件需要）
+17. powerline-fonts
+18. ttf-monaco
 
 前排提示，polybar配合[官方wiki](https://github.com/polybar/polybar/wiki)食用口味更佳。
 
-# Polybar Modules
+壁纸:/图片/148626446001.png
+[壁纸](https://github.com/Dimerbone/dotfiles/blob/master/图片/1486262446001)
+
+# Modules
 
 ## alsa
 
