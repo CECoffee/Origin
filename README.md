@@ -1,6 +1,6 @@
 # Polybar Nord 主题
 
-;;;;;![i3-nord.png](https://github.com/Yucklys/polybar-nord-theme/raw/master/screenshot.png)
+![screenshot.png](https://github.com/Dimerbone/dotfiles/blob/master/screenshot.png)
 
 <!--more-->
 
@@ -12,40 +12,48 @@
 2. [backlight](#backlight)
 3. [date](#date)
 4. [notify (基于dunst)](#notify)
-5. [network-detail](#network-detail)
-6. [network-short](#network-short)
+5. [upload](#upload)
+6. [download](#upload)
 7. [battery](#battery)
 8. [keyboard](#keyboard)
-9. [systray](#systray)
+9. [filesystem](#filesystem)
 10. [mpd](#mpd)
 11. [i3](#i3)
-12. [workspace-name](#workspace-name)
-13. [weather](#weather)
-14. [info-hackspeed](#info-hackspeed)
-15. [github](#github)
-16. [daily-poem](#daily-poem)
-17. [temperature](temperature)
-18. [memory](#memory)
-19. [cpu](#cpu)
-20. [show-desktop](#show-desktop)
+12. [weather](#weather)
+13. [info-hackspeed](#info-hackspeed)
+14. [daily-poem](#daily-poem)
+15. [temperature](temperature)
+16. [memory](#memory)
+17. [cpu](#cpu)
 
-必需依赖：
+依赖：
 
-1. [Font Awesome](https://www.archlinux.org/packages/community/any/ttf-font-awesome/) （必选）
+1.[Font Awesome](https://www.archlinux.org/packages/community/any/ttf-font-awesome/)
+2.bdf-unifont（AUR）
+3.ttf-fira-code（AUR）
+4.[Weather Icon](https://github.com/erikflowers/weather-icons)、jq（weather[polybar]组件需要）
+5. Dunst （notify[polybar]组件显示历史通知需要）
+6.mpd、ncmpcpp、mpc（mpd[polybar]、music[i3]组件需要）
+7.unicode-rxvt（urxvt）（AUR）
+8.compton
+9.feh
+10.fcit-sogoupinyin、fcitx-configtool、fcitx-lilydjwg-git<aur>
+11.rofi（rofi[i3]组件需要）
+12.[electron-ssr](https://github.com/shadowsocksrr/electron-ssr/releases/)
+13.utool
+14.cmatrix
+15.vundle（vim需要）
+16.xdotool（notify[polybar]组件需要）
+17.powerline-fonts
+18.ttf-monaco
 
-可选依赖：
+前排提示，polybar配合[官方wiki](https://github.com/polybar/polybar/wiki)食用口味更佳。
 
-1. [Weather Icon](https://github.com/erikflowers/weather-icons)（weather 组件需要）
-2. Dunst （notify 组件显示历史通知需要）
-3. redshift （backlight 开关 redshift 功能）
-
-前排提示，配合[官方wiki](https://github.com/polybar/polybar/wiki)食用口味更佳。
-
-# Modules
+# Polybar Modules
 
 ## alsa
 
-显示当前音量，根据音量共有三种不同颜色图标。默认声卡选择为`default`，可以在`nord-config`里调整声卡选项。
+显示当前音量，根据音量共有三种不同颜色图标。默认声卡选择为`default`，可以在.config/polybar/config里调整声卡选项。
 
 | 绑定     | 事件             |
 | -------- | ---------------- |
@@ -55,12 +63,7 @@
 
 ## backlight
 
-调整屏幕亮度。可选左击开关 redshift，需要提前配置好 redshift 或者修改 scripts/
-
-| 绑定   | 事件             |
-| ------ | ---------------- |
-| 滚轮上 | 亮度 +，每次 +5% |
-| 滚轮下 | 亮度 -，每次 -5% |
+通过写入/sys/class/backlight/intel_backlight/brightness以改变屏幕亮度，配置位于.config/i3/
 
 ## date
 
@@ -78,13 +81,10 @@
 | -------- | ------------------------------------------------------------ |
 | 鼠标左击 | 模拟 ctrl+grave，即默认的 dunst 历史快捷键，会被其他快捷键设定覆盖 |
 
-## network-detail
+## upload
 
-显示上传及下载速度，单位为KB/s，需要在`nord-config`中`interface`字段设置自己的 interface。
+显示上传及下载速度，单位为KB/s，需要在.config/polybar/config中`interface`字段设置自己的网络设备。
 
-## network-short
-
-显示网络连接图标，图标颜色代表网络连接延迟程度，颜色越偏红说明延迟越高。
 
 ## battery
 
@@ -96,7 +96,7 @@
 
 ## systray
 
-显示系统托盘。我的系统是 Manjaro i3 社区版，i3 版本 4.16.1，polybar 版本 3.4.0，按照如此配置没有产生显示错误。如果遇到问题可以到官方 issue 中查找，有图标问题的人挺多的。
+显示系统托盘。我的系统是 Manjaro dde 社区版，i3 版本 4.16.1，polybar 版本 3.4.0，按照如此配置没有产生显示错误。如果遇到问题可以到官方 issue 中查找，有图标问题的人挺多的。
 
 ## mpd
 
@@ -106,11 +106,11 @@
 - 暂停状态下显示部分内容，包括*播放*、*上一首*、*歌手 - 歌名*、*下一首*、*停止*。
 - 停止状态下仅显示*播放*。
 
-需要在`nord-config`中设置`mpd-host`及`mpd-port`。
+需要在.config/mpd/mpd.conf中设置`mpd-host`及`mpd-port`。
 
 ## i3
 
-显示 i3 workspace 图标，图标可在`nord-top`中定义。
+显示 i3 workspace 图标，图标可在.config/i3/config中定义。
 
 | 绑定     | 事件                     |
 | -------- | ------------------------ |
@@ -118,9 +118,6 @@
 | 滚轮上   | i3-msg workspace prev    |
 | 滚轮下   | i3-msg workspace next    |
 
-## workspace-name
-
-显示当前 workspace 名字，在 i3 的配置文件处定义，格式为 `index:name`，例如`1:Home`。
 
 ## weather
 
@@ -132,7 +129,7 @@
 
 ## daily-poem
 
-显示今日诗词，使用了 V友@lhx2008 分享的[今日诗词 API](https://www.jinrishici.com/)，支持显示诗词推荐、来源以及匹配标签。使用需要获取 token，可到 https://v2.jinrishici.com/token 获取 token 后替换我在`nord-down`中的 token。
+显示今日诗词，使用了 V友@lhx2008 分享的[今日诗词 API](https://www.jinrishici.com/)，支持显示诗词推荐、来源以及匹配标签。使用需 token，可到 https://v2.jinrishici.com/token 获取 token 后替换.config/polybar/config中的 token。
 
 | 绑定     | 事件         |
 | -------- | ------------ |
@@ -141,9 +138,13 @@
 | 滚轮下   | 显示匹配标签 |
 | 鼠标右击 | 更新诗词     |
 
+## filesystem
+
+显示根目录空间占用率
+
 ## temperature
 
-显示温度，可在`nord-config`中设置`thermal-zone`，默认为0。当温度低于`base-temperature`时切换为最低温度显示，当温度高于`warn-temperature`时切换为警戒温度显示，温度图标颜色会根据温度在`base-temperature`到`warn-temperature`之间变化，根据自身情况设置合理的值即可。
+显示温度，可在.config/polybar/config中设置`thermal-zone`，默认为0。当温度低于`base-temperature`时切换为最低温度显示，当温度高于`warn-temperature`时切换为警戒温度显示，温度图标颜色会根据温度在`base-temperature`到`warn-temperature`之间变化，根据自身情况设置合理的值即可。
 
 ## memory
 
