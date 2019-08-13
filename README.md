@@ -4,6 +4,10 @@
 
 <!--more-->
 
+![README_en](https://github.com/Dimerbone/dotfiles/blob/master/README_en.md)
+
+<!--more-->
+
 # 概况
 
 支持的 module：
@@ -108,9 +112,7 @@
 
 显示 mpd 信息，当 mpd 进程不存在时隐藏。总共有三种显示方式，分别为**播放中**、**暂停**以及**停止**。
 
-- 播放状态下显示全部内容，包括*暂停*、*上一首*、*歌手 - 歌名*、*下一首*、*停止*、*进度条*、*列表循环*以及*列表随机*。
-- 暂停状态下显示部分内容，包括*播放*、*上一首*、*歌手 - 歌名*、*下一首*、*停止*。
-- 停止状态下仅显示*播放*。
+- 显示内容包括*暂停*、*上一首*、、*下一首*、*停止*、*列表循环*、*单曲循环*、*列表随机*以及*歌手 - 歌名*.
 
 需要在.config/mpd/mpd.conf中设置`mpd-host`及`mpd-port`。
 
@@ -127,11 +129,11 @@
 
 ## weather
 
-显示 Openweather 天气信息，使用的脚本来自于[polybar/polybar-scripts/openweather-fullfeatured](https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/openweathermap-fullfeatured)，需要个人API及城市代码，在脚本中设置，具体情况可查看项目 Readme。
+显示 Openweather 天气信息，使用的脚本来自于[openweather-fullfeatured](https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/openweathermap-fullfeatured)，需要个人API及城市代码，在脚本中设置，具体情况可查看项目 Readme。
 
 ## info-hackspeed
 
-显示每分钟输入速度，单位默认为 cpm (char per minute)，可选 wpm (word per minute)，在脚本中设置。来自于[polybar/polybar-scripts/info-hackspeed](https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/info-hackspeed)。
+显示每分钟输入速度，单位默认为 cpm (char per minute)，可选 wpm (word per minute)，在脚本中设置。来自于[info-hackspeed](https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/info-hackspeed)。
 
 ## daily-poem
 
@@ -159,4 +161,3 @@
 ## cpu
 
 显示 cpu 使用情况。
-
