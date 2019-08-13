@@ -71,26 +71,26 @@ if [ -n "$current" ] && [ -n "$forecast" ]; then
     forecast_icon=$(echo "$forecast" | jq -r ".list[].weather[0].icon")
 
 fi
-#    if [ "$current_temp" -gt "$forecast_temp" ]; then
-#        trend=""
-#    elif [ "$forecast_temp" -gt "$current_temp" ]; then
-#        trend=""
-#    else
-#        trend=""
-#    fi
+    if [ "$current_temp" -gt "$forecast_temp" ]; then
+        trend=""
+    elif [ "$forecast_temp" -gt "$current_temp" ]; then
+        trend=""
+    else
+        trend=""
+    fi
 
 
-#    sun_rise=$(echo "$current" | jq ".sys.sunrise")
-#    sun_set=$(echo "$current" | jq ".sys.sunset")
-#    now=$(date +%s)
+    sun_rise=$(echo "$current" | jq ".sys.sunrise")
+    sun_set=$(echo "$current" | jq ".sys.sunset")
+    now=$(date +%s)
 
-#    if [ "$sun_rise" -gt "$now" ]; then
-#        daytime=" $(get_duration "$((sun_rise-now))")"
-#    elif [ "$sun_set" -gt "$now" ]; then
-#        daytime=" $(get_duration "$((sun_set-now))")"
-#    else
-#        daytime=" $(get_duration "$((sun_rise-now))")"
-#    fi
+    if [ "$sun_rise" -gt "$now" ]; then
+        daytime=" $(get_duration "$((sun_rise-now))")"
+    elif [ "$sun_set" -gt "$now" ]; then
+        daytime=" $(get_duration "$((sun_set-now))")"
+    else
+        daytime=" $(get_duration "$((sun_rise-now))")"
+    fi
 
-#    echo "$(get_icon "$current_icon") $current_temp$SYMBOL  $trend  $(get_icon "$forecast_icon") $forecast_temp$SYMBOL   $daytime"
-#fi
+    echo "$(get_icon "$current_icon") $current_temp$SYMBOL  $trend  $(get_icon "$forecast_icon") $forecast_temp$SYMBOL   $daytime"
+fi
