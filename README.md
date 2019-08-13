@@ -1,4 +1,4 @@
-# Polybar Nord 主题
+# 自用配置及依赖仓库
 
 ![screenshot.png](https://github.com/Dimerbone/dotfiles/blob/master/screenshot.png)
 
