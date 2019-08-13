@@ -19,7 +19,7 @@
 3. [date](#date)
 4. [notify (基于dunst)](#notify)
 5. [upload](#upload)
-6. [download](#upload & download)
+6. [download](#upload\ &\ download)
 7. [battery](#battery)
 8. [keyboard](#keyboard)
 9. [filesystem](#filesystem)
