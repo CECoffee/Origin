@@ -4,6 +4,8 @@
 
 <!--more-->
 
+# README in English
+
 [README_en](https://github.com/Dimerbone/dotfiles/blob/master/README_en.md)
 
 <!--more-->
