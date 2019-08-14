@@ -14,23 +14,27 @@
 
 The supported modules：
 
-1. [alsa](#alsa)
-2. [backlight](#backlight)
-3. [date](#date)
-4. [notify (based on dunst)](#notify)
-5. [upload](#upload)
-6. [download](#upload)
-7. [battery](#battery)
-8. [keyboard](#keyboard)
-9. [filesystem](#filesystem)
-10. [mpd](#mpd)
-11. [i3](#i3)
-12. [weather](#weather)
-13. [info-hackspeed](#info-hackspeed)
-14. [daily-poem](#daily-poem)
-15. [temperature](temperature)
-16. [memory](#memory)
-17. [cpu](#cpu)
+- [Configures and Dependences of my own](#configures-and-dependences-of-my-own)
+- [README in Chinese](#readme-in-chinese)
+- [general situation](#general-situation)
+- [Modules](#modules)
+  - [alsa](#alsa)
+  - [backlight](#backlight)
+  - [date](#date)
+  - [notify](#notify)
+  - [upload](#upload)
+  - [battery](#battery)
+  - [keyboard](#keyboard)
+  - [systray](#systray)
+  - [mpd](#mpd)
+  - [i3](#i3)
+  - [weather](#weather)
+  - [info-hackspeed](#info-hackspeed)
+  - [daily-poem](#daily-poem)
+  - [filesystem](#filesystem)
+  - [temperature](#temperature)
+  - [memory](#memory)
+  - [cpu](#cpu)
 
 Dependence：
 
@@ -64,11 +68,11 @@ Desktop-background:/图片/148626446001.png
 ## alsa
 
 Display current volume，There are three different color ICONS depending on the volume.
-| Action | Event |
-| :-----------------------: | :---------------------: |
-| Left-click the mouse | mute/unmute |
-| Upward roller | volume +5% every time |
-| Downward rooller | volume -5% every time |
+| Action                    | Event                   |
+| :-----------------------: |:---------------------: |
+| Left-click the mouse      | mute/unmute             |
+| Upward roller             | volume +5% every time   |
+| Downward rooller          | volume -5% every time   |
 
 ## backlight
 
