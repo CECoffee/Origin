@@ -4,7 +4,7 @@
 
 <!--more-->
 
-# README in Chinese
+### README in Chinese
 
 [README_zh_cn](https://github.com/Dimerbone/dotfiles/blob/master/README.md)
 
@@ -68,6 +68,7 @@ Desktop-background:/图片/148626446001.png
 ## alsa
 
 Display current volume，There are three different color ICONS depending on the volume.
+
 | Action                    | Event                   |
 | :-----------------------: |:---------------------: |
 | Left-click the mouse      | mute/unmute             |
