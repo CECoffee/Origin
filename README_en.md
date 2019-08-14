@@ -4,7 +4,9 @@
 
 <!--more-->
 
-![README_zh_cn](https://github.com/Dimerbone/dotfiles/blob/master/README.md)
+# README in Chinese
+
+[README_zh_cn](https://github.com/Dimerbone/dotfiles/blob/master/README.md)
 
 <!--more-->
 
