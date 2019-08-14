@@ -65,7 +65,7 @@ Desktop-background:/图片/148626446001.png
 
 Display current volume，There are three different color ICONS depending on the volume.
 | Action | Event |
-| :------: | :------: |
+| :-----------------------: | :---------------------: |
 | Left-click the mouse | mute/unmute |
 | Upward roller | volume +5% every time |
 | Downward rooller | volume -5% every time |
