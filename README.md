@@ -52,6 +52,7 @@
 16. xdotool（notify[polybar]组件需要）
 17. powerline-fonts
 18. ttf-monaco
+19. i3lock-fancy
 
 前排提示，polybar配合[官方wiki](https://github.com/polybar/polybar/wiki)食用口味更佳。
 

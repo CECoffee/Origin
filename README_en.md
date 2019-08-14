@@ -56,6 +56,7 @@ Dependence：
 16. xdotool（required by notify[polybar] module）
 17. powerline-fonts
 18. ttf-monaco
+19. i3lock-fancy
 
 Desktop-background:/图片/148626446001.png
 
