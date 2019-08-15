@@ -57,6 +57,7 @@ Dependence：
 17. powerline-fonts
 18. ttf-monaco
 19. i3lock-fancy
+20. rofi
 
 Desktop-background:/图片/148626446001.png
 

@@ -117,7 +117,7 @@ label-focused-padding = 2
 label-occupied = %index%
 label-occupied-padding = 2
 
-label-urgent = %index%!
+label-urgent = %index%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
@@ -150,7 +150,7 @@ label-visible-background = ##ff222240
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
-label-urgent = %name%!
+label-urgent = %name%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding} |
 
@@ -404,9 +404,9 @@ label-separator-foreground = ${colors.foreground-alt}
 
 
 menu-0-0 = 关机
-menu-0-0-exec = poweroff
+menu-0-0-exec = rm ~/.config/i3/unlocked && poweroff
 menu-0-1 = 重启
-menu-0-1-exec = reboot
+menu-0-1-exec = rm ~/.config/i3/unlocked && reboot
 menu-0-2 = 注销
 menu-0-2-exec = pkill -kill -u fe
 
@@ -423,7 +423,7 @@ margin-bottom = 5
 [module/daily-poem]
 type = custom/ipc
 
-# replace vU1whWzAS7pqAHRkvTD9KxF757ZXcfwS with your token from https://v2.jinrishici.com/token.
+# replace IDZJPFP9nkjOfsJ5KJO98E4Tgu3DbFHh with your token from https://v2.jinrishici.com/token.
 hook-0 = ~/.config/polybar/scripts/daily-poem require vU1whWzAS7pqAHRkvTD9KxF757ZXcfwS ~/.config/polybar/scripts/poem.txt
 hook-1 = ~/.config/polybar/scripts/daily-poem get ~/.config/polybar/scripts/poem.txt content 
 hook-2 = ~/.config/polybar/scripts/daily-poem get ~/.config/polybar/scripts/poem.txt origin

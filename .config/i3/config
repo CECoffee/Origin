@@ -8,7 +8,7 @@ exec_always --no-startup-id feh --bg-scale "/home/fe/图片/1486262446001.png"
 exec --no-startup-id electron-ssr
 exec_always --no-startup-id fcitx
 ## exec_always --no-startup-id conky
-exec urxvt -sh 40 -e sudo chmod 777 /sys/class/backlight/intel_backlight/brightness
+exec urxvt -sh 40 -e ~/.config/i3/bright.sh
 exec_always --no-startup-id dunst
 exec --no-startup-id utools
 
