@@ -12,6 +12,5 @@
 if [ -f "~/.config/i3/unlocked" ]; then
 	exit
 else
-	echo "DONNOT REMOVE ME!!" > ~/.config/i3/unlocked && sudo chmod 777 /sys/class/backlight/intel_backlight/brightness
+	echo "DONNOT REMOVE ME!!" > ~/.config/i3/unlocked && sudo chmod 777 /sys/class/backlight/intel_backlight/brightness && echo "Brightness Controller Accessed" && sleep 4s
 fi
-echo "Brightness Controller Accessed"
