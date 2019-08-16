@@ -9,8 +9,9 @@
 #export PATH
 
 
-if [ ! -f "~/.config/i3/unlocked" ]; then
+if [ -f "~/.config/i3/unlocked" ]; then
 	exit
 else
 	echo "DONNOT REMOVE ME!!" > ~/.config/i3/unlocked && sudo chmod 777 /sys/class/backlight/intel_backlight/brightness
 fi
+echo "Brightness Controller Accessed"
