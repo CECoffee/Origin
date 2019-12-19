@@ -404,9 +404,9 @@ label-separator-foreground = ${colors.foreground-alt}
 
 
 menu-0-0 = 关机
-menu-0-0-exec = rm ~/.config/i3/unlocked && poweroff
+menu-0-0-exec = poweroff
 menu-0-1 = 重启
-menu-0-1-exec = rm ~/.config/i3/unlocked && reboot
+menu-0-1-exec = reboot
 menu-0-2 = 注销
 menu-0-2-exec = pkill -kill -u fe
 
