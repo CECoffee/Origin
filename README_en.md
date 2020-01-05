@@ -52,18 +52,11 @@ Dependence：
 12. [electron-ssr](https://github.com/shadowsocksrr/electron-ssr/releases/)
 13. utool（uploaded）
 14. cmatrix
-15. vundle（required by vim）
-16. xdotool（required by notify[polybar] module）
-17. powerline-fonts
-18. ttf-monaco
-19. i3lock-fancy
-20. rofi
-
-PS:Don't forget to overwrite my username 'fe' to yours in all these configs.
-
-Desktop-background:/图片/148626446001.png
-
-![background](https://github.com/Dimerbone/dotfiles/blob/master/图片/1486262446001.png)
+15. xdotool（required by notify[polybar] module）
+16. powerline-fonts
+17. ttf-monaco
+18. i3lock-fancy(AUR)
+19. rofi
 
 <!--more-->
 

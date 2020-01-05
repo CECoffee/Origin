@@ -43,25 +43,18 @@
 7. unicode-rxvt（urxvt）（AUR）
 8. compton
 9. feh
-10. fcit-sogoupinyin、fcitx-configtool、fcitx-lilydjwg-git<aur>
+10. fcit-sogoupinyin、fcitx-configtool、fcitx-lilydjwg-git(aur)
 11. rofi（rofi[i3]组件需要）
 12. [electron-ssr](https://github.com/shadowsocksrr/electron-ssr/releases/)
 13. utool（已上传）
 14. cmatrix
-15. vundle（vim需要）
-16. xdotool（notify[polybar]组件需要）
-17. powerline-fonts
-18. ttf-monaco
-19. i3lock-fancy
-20. rofi
+15. xdotool（notify[polybar]组件需要）
+16. powerline-fonts
+17. ttf-monaco
+18. i3lock-fancy(AUR)
+19. rofi
 
 前排提示，polybar配合[官方wiki](https://github.com/polybar/polybar/wiki)食用口味更佳。
-
-PS:别忘了把所有配置文件里的用户名"fe"改成自己的用户名
-
-壁纸:/图片/148626446001.png
-
-![壁纸](https://github.com/Dimerbone/dotfiles/blob/master/图片/1486262446001.png)
 
 <!--more-->
 
