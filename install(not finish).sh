@@ -5,9 +5,8 @@
 # Created Time: 2020年01月05日 星期日 16时32分30秒
 #########################################################################
 #!/bin/zsh
-#PATH=/home/edison/bin:/home/edison/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/work/tools/gcc-3.4.5-glibc-2.3.6/bin
-#export PATH
-echo
+PATH=/home/edison/bin:/home/edison/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/work/tools/gcc-3.4.5-glibc-2.3.6/bin
+export PATH
 echo -e "\033[1;5;31mThink twice before going further.The proccess will irreversibly change local files!(May contain this installation file) \033[0m "
 echo -e "\033[1;32mSelect programes & configs you want to install. \033[0m"
 echo -e "\033[43;1;30m 1 \033[0m Vim"
@@ -39,7 +38,7 @@ aur=""
 ######
 if [[ $str1 =~ "1" ]];then
   hash vim 2>/dev/null || pacman_S=$pacman_S$vim
-  ist=$i3
+  ist=$ist$i3
 fi
 
 if [[ $str1 =~ "2" ]];then
@@ -50,43 +49,94 @@ if [[ $str1 =~ "2" ]];then
   echo -e "\033[43;1;30m 3 \033[0m Install utools \033[0m"
   echo -n -e "\033[1;33m==> \033[0m" && read str2
   
-  if [[$str2 =~ "1"]];then
-    aur=$aur$("i3lock-fancy")
+  if [[$str2 =~ "1" ]];then
+    aur=$aur$("i3lock-fancy ")
   else
-    replace $pwd/.config/i3/config "i3lock-fancy" "i3lock"
+    sed -i "/s/i3lock-fancy/i3lock/g" $pwd/.config/i3/config
     pacman_S=$pacman_S$("i3lock")
   fi
   
-  if [[$str2 =~ "2"]];then
+  if [[$str2 =~ "2" ]];then
     pacman=$pacman_S$("cmatrix")
   else
     sed -i "63s/^/#/" $pwd/.config/i3/config
   fi
   
-  if [[$str2 =~ "3"]];then
+  if [[$str2 =~ "3" ]];then
     pacman_U=$pwd/utools-0.7.1beta-1-x86_64.pkg.tar.xz
   fi
   
   echo -e "\033[1Type path of wallpaper if you want to use your own ones, or type nothing to use mine. \033[0m"
   echo -e -n "\033[1;33m==> \033[0m" && read str3
-  if [ "$str3" == ""];then
-    $ist=$ist$("wallpaper")
-  else
+  if [ $str3 != "" ];then
     sed -i "s/"~/Pictrues/1486262446001.png"/$str3/g" $pwd/.config/i3/config
   fi
   
 fi
 
-#if [[$str1 =~ "3"]];then
+#if [[$str1 =~ "3" ]];then
 #fi
 
-#if [[$str1 =~ "4"]] && ist=$ist$rofi
+#if [[$str1 =~ "4" ]] && ist=$ist$rofi
 #fi
 
-#if [[$str1 =~ "5"]] && ist=$ist$mpd
+#if [[$str1 =~ "5" ]] && ist=$ist$mpd
 #fi
 
-#if [[$str1 =~ "A"]] && ist=$all
+#if [[$str1 =~ "A" ]] && ist=$all
 #fi
 ######
+echo -e "\033[1;32mStrat installation\033[0m"
+sleep 2
+##
+echo -e "\033[1;37mInstalling dependeted packages. \033[0m"
 
+if [$pacman_S != "" ];then
+  sudo pacman -S $pacman_S
+  while [$(echo $?) ! = "0" ]; do
+    echo -n -e"\033[1;31mInstallation failed. \033[0m Retry?[y/N]" && read str4
+    if [$str4 = "y" ] or [$str4 = "Y" ];then
+      sudo pacman -S $pacman_S
+    else
+      exit
+    fi
+  done
+fi
+
+if [[$str2 ~= "3" ]];then
+  sudo pacman -U $pacman_U
+  while [$(echo $?) ! = "0" ]; do
+    echo -n -e"\033[1;31mInstallation failed. \033[0m Retry?[y/N]" && read str4
+    if [$str4 = "y" ] or [$str4 = "Y" ];then
+      sudo pacman -S $pacman_S
+    else
+      exit
+    fi
+  done
+fi
+
+if [$aur !="" ];then
+  echo -e "\033[1;37mEnter the name of your aur package manager. (Example: 'yaourt' or 'yay', etc.) \033[0m" && echo -n "==>" && read str5
+  if [$str5 != "" ];then
+    $str5 -S $aur
+  fi
+fi
+
+echo -e "\033[1;37mDone! \033[0m" && sleep 1
+##
+echo -e "\033[1;37mStart copying config files. \033[0m"
+
+if [[$str1 =~ "1" ]];then
+  mkdir -p ~/.config/
+  cp -r $pwd/.config/i3 ~/.config
+fi
+
+if [[$str2 =~ "2" ]];then
+  mkdir -p ~/.config/
+  cp -r $pwd/.config/polybar ~/.config
+fi
+
+if  [[$str1 =~ "3" ]];then
+  mkdir -p ~/.config
+  cp -r $pwd/.config/polybar ~/.config
+fi
