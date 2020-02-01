@@ -4,7 +4,7 @@ set $mod Mod4
 # 自启
 exec mpd ~/.config/mpd/mpd.conf
 exec --no-startup-id compton -b
-exec_always --no-startup-id feh --bg-scale "/home/fe/图片/1486262446001.png"
+exec_always --no-startup-id feh --bg-scale "/home/fe/图片/1482211612923.jpg"
 exec --no-startup-id electron-ssr
 exec_always --no-startup-id fcitx
 ## exec_always --no-startup-id conky
