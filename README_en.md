@@ -56,7 +56,6 @@ Dependence：
 16. powerline-fonts
 17. ttf-monaco
 18. i3lock-fancy(AUR)
-19. rofi
 
 <!--more-->
 

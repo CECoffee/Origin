@@ -52,7 +52,6 @@
 16. powerline-fonts
 17. ttf-monaco
 18. i3lock-fancy(AUR)
-19. rofi
 
 前排提示，polybar配合[官方wiki](https://github.com/polybar/polybar/wiki)食用口味更佳。
 
