@@ -40,7 +40,7 @@
 4. [Weather Icon](https://github.com/erikflowers/weather-icons)、jq（weather[polybar]组件需要）
 5. Dunst （notify[polybar]组件显示历史通知需要）
 6. mpd、ncmpcpp、mpc（mpd[polybar]、music[i3]组件需要）
-7. unicode-rxvt（urxvt）（AUR）
+7. rxvt-unicode（urxvt）（AUR）
 8. compton
 9. feh
 10. fcit-sogoupinyin、fcitx-configtool、fcitx-lilydjwg-git(aur)
@@ -51,7 +51,7 @@
 15. xdotool（notify[polybar]组件需要）
 16. powerline-fonts
 17. ttf-monaco
-18. i3lock-fancy(AUR)
+18. i3lock-fancy-git(AUR)
 
 前排提示，polybar配合[官方wiki](https://github.com/polybar/polybar/wiki)食用口味更佳。
 

@@ -44,7 +44,7 @@ Dependence：
 4. [Weather Icon](https://github.com/erikflowers/weather-icons)、jq（required by weather[polybar] module）
 5. Dunst （required by notify[polybar] module）
 6. mpd、ncmpcpp、mpc（required by mpd[polybar] & music[i3] modules）
-7. unicode-rxvt（urxvt）（AUR）
+7. rxvt-unicode（urxvt）（AUR）
 8. compton
 9. feh（required by rofi[i3] module）
 10. fcit-sogoupinyin、fcitx-configtool、fcitx-lilydjwg-git（AUR）
@@ -55,7 +55,7 @@ Dependence：
 15. xdotool（required by notify[polybar] module）
 16. powerline-fonts
 17. ttf-monaco
-18. i3lock-fancy(AUR)
+18. i3lock-fancy-git(AUR)
 
 <!--more-->
 
