@@ -1,12 +1,12 @@
 # 自用配置及依赖仓库
 
-![screenshot.png](https://github.com/Dimerbone/dotfiles/blob/master/screenshot.png)
+![screenshot.png](https://github.com/Dimerbone/Origin/blob/master/screenshot.png)
 
 <!--more-->
 
 ### README in English
 
-[README_en](https://github.com/Dimerbone/dotfiles/blob/master/README_en.md)
+[README_en](https://github.com/Dimerbone/Origin/blob/master/README_en.md)
 
 <!--more-->
 
