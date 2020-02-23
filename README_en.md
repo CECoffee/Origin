@@ -1,12 +1,12 @@
 # Configures and Dependences of my own
 
-![screenshot.png](https://github.com/Dimerbone/dotfiles/blob/master/screenshot.png)
+![screenshot.png](https://github.com/Dimerbone/Origin/blob/master/screenshot.png)
 
 <!--more-->
 
 ### README in Chinese
 
-[README_zh_cn](https://github.com/Dimerbone/dotfiles/blob/master/README.md)
+[README_zh_cn](https://github.com/Dimerbone/Origin/blob/master/README.md)
 
 <!--more-->
 
