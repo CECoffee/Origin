@@ -1,6 +1,5 @@
 # 自用配置及依赖仓库
 
-![screenshot.png](https://github.com/Dimerbone/Origin/blob/master/screenshot.png)
 
 <!--more-->
 
@@ -56,6 +55,9 @@
 前排提示，polybar配合[官方wiki](https://github.com/polybar/polybar/wiki)食用口味更佳。
 
 <!--more-->
+
+![screenshot.png](https://github.com/Dimerbone/Origin/blob/master/screenshot.png)
+![screenshot.png](https://github.com/Dimerbone/Origin/blob/master/screenshot1.png)
 
 # Modules
 

@@ -1,6 +1,5 @@
 # Configures and Dependences of my own
 
-![screenshot.png](https://github.com/Dimerbone/Origin/blob/master/screenshot.png)
 
 <!--more-->
 
@@ -58,6 +57,9 @@ Dependence：
 18. i3lock-fancy-git(AUR)
 
 <!--more-->
+
+![screenshot.png](https://github.com/Dimerbone/Origin/blob/master/screenshot.png)
+![screenshot.png](https://github.com/Dimerbone/Origin/blob/master/screenshot1.png)
 
 # Modules
 
