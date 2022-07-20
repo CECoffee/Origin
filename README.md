@@ -1,5 +1,7 @@
 # 自用配置及依赖仓库
 
+已退环境，不再维护
+Quited linux coterie, no longer support this project
 
 <!--more-->
 
